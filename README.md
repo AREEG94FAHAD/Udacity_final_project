@@ -1,5 +1,6 @@
 # Articles API Final project of Udacity Course
 
+
 ## API Article
 
 ### Installing Dependencies
@@ -81,8 +82,8 @@ flask run
 ## API Reference
 
 ### Getting Started
-Base URL: At present this app can only be run locally and is not hosted as a base URL. The backend app is hosted at the default, http://127.0.0.1:5000/.
-Authentication: This version of the application does not require  auth0 authentication.
+Base URL: At present this app be run remotley and is  hosted as a base URL. The backend app is hosted at the default, https://lolo94.herokuapp.com/.
+Authentication: This version of the application does  require  auth0 authentication.
 
 ### Getting Started
 Errors are returned as JSON objects in the following format:
@@ -132,7 +133,7 @@ The API will return four error types when requests fail:
 
 
 ```
-curl http://127.0.0.1:5000/welcome
+curl https://lolo94.herokuapp.com/welcome
 ```
 
 ```
@@ -146,11 +147,11 @@ curl http://127.0.0.1:5000/welcome
 - permission requirement (get:person)
 - Access to all persons info such as name and departments.
 
-'curl -H "Authorization: bearer  <ACCESS_TOKEN>" http://127.0.0.1:5000/person'
+'curl -H "Authorization: bearer  <ACCESS_TOKEN>" https://lolo94.herokuapp.com/person'
 
 ##### Example
 
-```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw" http://127.0.0.1:5000/person```
+```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw" https://lolo94.herokuapp.com/person```
 
 ##### response
 
@@ -189,7 +190,7 @@ curl http://127.0.0.1:5000/welcome
 'curl -H "Authorization: bearer  <ACCESS_TOKEN>" http://127.0.0.1:5000/article'
 
 ##### Example
-```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw" http://127.0.0.1:5000/article```
+```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw" https://lolo94.herokuapp.com/article```
 
 ##### Response
 ```
@@ -223,12 +224,12 @@ curl http://127.0.0.1:5000/welcome
 - permission requirement (post:person)
 - post new person.
 
-`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/person -X POST -H "Content-Type: application/json" -d '{"name":"areeg fahad","department":"network"}'`
+`curl -H "Authorization: bearer <token>  https://lolo94.herokuapp.com/person -X POST -H "Content-Type: application/json" -d '{"name":"areeg fahad","department":"network"}'`
 
 ##### Example
 
 ```
-curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  http://127.0.0.1:5000/person -X POST -H "Content-Type: application/json" -d '{"name":"areeg fahad","department":"network"}'
+curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  https://lolo94.herokuapp.com/person -X POST -H "Content-Type: application/json" -d '{"name":"areeg fahad","department":"network"}'
 ```
 ##### Response
   "person": [
@@ -265,9 +266,9 @@ curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3c
 - permission requirement (post:article)
 - post new article.
 
-`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/article -X POST -H "Content-Type: application/json" -d '{"name":"areeg fahad","category":"network", "person_id":2}'`
+`curl -H "Authorization: bearer <token>  https://lolo94.herokuapp.com/article -X POST -H "Content-Type: application/json" -d '{"name":"areeg fahad","category":"network", "person_id":2}'`
 ##### Example
-```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  http://127.0.0.1:5000/article -X POST -H "Content-Type: application/json" -d '{"data":"areeg fahad","category":"network","person_id":"2"}'
+```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  https://lolo94.herokuapp.com/article -X POST -H "Content-Type: application/json" -d '{"data":"areeg fahad","category":"network","person_id":"2"}'
 
 ```
 ##### Response 
@@ -308,12 +309,12 @@ curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3c
 - permission requirement (patch:person)
 - Modify one or more fields in person info.
 
-`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/person -X POST -H "Content-Type: application/json" -d '{"name":"areeg fahad","department":"network"}'`
+`curl -H "Authorization: bearer <token>  https://lolo94.herokuapp.com/person -X POST -H "Content-Type: application/json" -d '{"name":"areeg fahad","department":"network"}'`
 
 ##### Example
 
 ```
-curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  http://127.0.0.1:5000/person/2 -X patch -H "Content-Type: application/json" -d '{"name":"areeg fahad"}'
+curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  https://lolo94.herokuapp.com/person/2 -X patch -H "Content-Type: application/json" -d '{"name":"areeg fahad"}'
 
 ```
 ##### Response
@@ -355,10 +356,10 @@ curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3c
 - permission requirement (patch:article)
 - Modify one or more fields in person info.
 
-`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/article/1 -X patch -H "Content-Type: application/json" -d '{"data":"abcd"}'`
+`curl -H "Authorization: bearer <token>  https://lolo94.herokuapp.com/article/1 -X patch -H "Content-Type: application/json" -d '{"data":"abcd"}'`
 
 ##### Example
-``` curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  http://127.0.0.1:5000/article/2 -X patch -H "Content-Type: application/json" -d '{"data":"abcd"}'
+``` curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw" https://lolo94.herokuapp.com/article/2 -X patch -H "Content-Type: application/json" -d '{"data":"abcd"}'
 
 ```
 
@@ -400,11 +401,11 @@ curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3c
 - permission requirement (delete:person)
 - Delete person.
 
-`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/person/1 -X DELETE -H`
+`curl -H "Authorization: bearer <token>  https://lolo94.herokuapp.com/person/1 -X DELETE -H`
 
 ##### Example
 
-```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  http://127.0.0.1:5000/person/2 -X DELETE
+```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  https://lolo94.herokuapp.com/person/2 -X DELETE
 
 ```
 ##### Response 
@@ -421,11 +422,11 @@ curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3c
 - permission requirement (delete:article)
 - Delete article.
 
-`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/person/1 -X DELETE -H`
+`curl -H "Authorization: bearer <token>  https://lolo94.herokuapp.com/person/1 -X DELETE -H`
 
 ##### Example
 
-```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  http://127.0.0.1:5000/article/2 -X DELETE
+```curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx3clNxYXNfR1p3NXJUZGw0cXdCZCJ9.eyJpc3MiOiJodHRwczovL2Rldi01d2dncWhidC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVlNTAzMGQ3NzFiMjUwYjc3MTY3NTM2IiwiYXVkIjoicHJvamVjdCIsImlhdCI6MTU5MjQyOTIwMywiZXhwIjoxNTkyNTE1NjAzLCJhenAiOiJWMWFyUXBVdzRrZGJKc3k2MDNQQ1Q2cUdyeVFydmo5cCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFydGljbGUiLCJkZWxldGU6cGVyc29uIiwiZ2V0OmFydGljbGVzIiwiZ2V0OnBlcnNvbnMiLCJwYXRjaDphcnRpY2xlIiwicGF0Y2g6cGVyc29uIiwicG9zdDphcnRpY2xlIiwicG9zdDpwZXJzb24iXX0.a9W8xZQjSUNcLvym_w9iRIFRyWkUcCOcVWQnH8NFXPRdWBpnOKRbP4Ji6YdHq2j9dl9Ywr1u5UksV7ZRIS9hFpbiiRnfACQabL2ShTm3eOR-GyH1F8xZpZrF02m9O4qpZVJRq6SUaIY5OoxkmoumbD7fGJlcy74t22F35EWDBsVsNmXnzUIxADRyBgZnlJBh3Tr_QcILUpHr8HfdEzwQiauWcK9Z8vCVzAdnUULcyhGBYaas_mgCpj6fJWndyYn-ZfeY1ACHEceZ_Tgkg_NRb9RmhsTFD76TYq8ZAimupFHsVCMnB_mlRIf4mGmPfDgJlOWHvtxFypSsR_PjSRyrgw"  https://lolo94.herokuapp.com/article/2 -X DELETE
 
 ```
 ##### Respone
